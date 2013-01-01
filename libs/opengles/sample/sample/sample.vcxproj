@@ -10,49 +10,10 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="basecode\lge_logger.cpp" />
-    <ClCompile Include="basecode\lge_md5.cpp" />
-    <ClCompile Include="basecode\lge_platform.cpp" />
-    <ClCompile Include="basecode\lge_profile.cpp" />
-    <ClCompile Include="basecode\lge_string_format.cpp" />
-    <ClCompile Include="basecode\lge_sys_info.cpp" />
-    <ClCompile Include="basecode\lge_util.cpp" />
-    <ClCompile Include="basecode\lge_xml_util.cpp" />
-    <ClCompile Include="engine\lge_engine.cpp" />
-    <ClCompile Include="engine\lge_font.cpp" />
-    <ClCompile Include="engine\lge_render_system.cpp" />
-    <ClCompile Include="engine\lge_render_gles2.cpp" />
-    <ClCompile Include="engine\lge_sprite.cpp" />
-    <ClCompile Include="engine\lge_texture.cpp" />
-    <ClCompile Include="lge.cpp" />
-    <ClCompile Include="stdafx.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="basecode\lge_logger.h" />
-    <ClInclude Include="basecode\lge_md5.h" />
-    <ClInclude Include="basecode\lge_platform.h" />
-    <ClInclude Include="basecode\lge_profile.h" />
-    <ClInclude Include="basecode\lge_singleton.h" />
-    <ClInclude Include="basecode\lge_string_format.h" />
-    <ClInclude Include="basecode\lge_sys_info.h" />
-    <ClInclude Include="basecode\lge_util.h" />
-    <ClInclude Include="basecode\lge_xml_util.h" />
-    <ClInclude Include="engine\lge_engine.h" />
-    <ClInclude Include="engine\lge_font.h" />
-    <ClInclude Include="engine\lge_render_system.h" />
-    <ClInclude Include="engine\lge_render_gles2.h" />
-    <ClInclude Include="engine\lge_sprite.h" />
-    <ClInclude Include="engine\lge_texture.h" />
-    <ClInclude Include="lge.h" />
-    <ClInclude Include="Resource.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C478D46A-AC81-4805-8AD9-21EAB143EBBB}</ProjectGuid>
+    <ProjectGuid>{097EED70-91CB-4893-92A4-AFCE40DEF66B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>lge</RootNamespace>
+    <RootNamespace>sample</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -78,23 +39,24 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../bin</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../libs/opengles/include;basecode;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>../libs/opengles/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libEGL.lib;libGLESv1_CM.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -104,15 +66,32 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\simpApp11\simpApp11.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

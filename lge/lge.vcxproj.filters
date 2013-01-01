@@ -1,104 +1,129 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="basecode">
+      <UniqueIdentifier>{a511775f-a8ae-4db5-9d91-cb85ec95a5b5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    <Filter Include="package">
+      <UniqueIdentifier>{6141e8e0-7a3b-4c2e-844b-31e7cb873a71}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="engine">
+      <UniqueIdentifier>{eccf3a59-3b09-4533-a4cb-268e18694aea}</UniqueIdentifier>
     </Filter>
-    <Filter Include="lge">
-      <UniqueIdentifier>{5ce595f5-fd6f-43c9-905a-7ef50a6cabc8}</UniqueIdentifier>
+    <Filter Include="framework">
+      <UniqueIdentifier>{378ac361-197b-4af4-b04f-519dcbf1a5f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{6dfa1cd1-c193-40d6-9c3e-f1fb6b35238e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
-    <None Include="small.ico">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="lge.ico">
-      <Filter>Resource Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lge.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lge_engine.h">
-      <Filter>lge</Filter>
-    </ClInclude>
-    <ClInclude Include="lge_platform.h">
-      <Filter>lge</Filter>
-    </ClInclude>
-    <ClInclude Include="lge_render_gles2.h">
-      <Filter>lge</Filter>
-    </ClInclude>
-    <ClInclude Include="lge_util.h">
-      <Filter>lge</Filter>
-    </ClInclude>
-    <ClInclude Include="lge_render.h">
-      <Filter>lge</Filter>
-    </ClInclude>
-    <ClInclude Include="lge_texture.h">
-      <Filter>lge</Filter>
-    </ClInclude>
-    <ClInclude Include="lge_sprite.h">
-      <Filter>lge</Filter>
-    </ClInclude>
-    <ClInclude Include="lge_font.h">
-      <Filter>lge</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="basecode\lge_logger.cpp">
+      <Filter>basecode</Filter>
+    </ClCompile>
+    <ClCompile Include="basecode\lge_md5.cpp">
+      <Filter>basecode</Filter>
+    </ClCompile>
+    <ClCompile Include="basecode\lge_platform.cpp">
+      <Filter>basecode</Filter>
+    </ClCompile>
+    <ClCompile Include="basecode\lge_profile.cpp">
+      <Filter>basecode</Filter>
+    </ClCompile>
+    <ClCompile Include="basecode\lge_string_format.cpp">
+      <Filter>basecode</Filter>
+    </ClCompile>
+    <ClCompile Include="basecode\lge_sys_info.cpp">
+      <Filter>basecode</Filter>
+    </ClCompile>
+    <ClCompile Include="basecode\lge_util.cpp">
+      <Filter>basecode</Filter>
+    </ClCompile>
+    <ClCompile Include="basecode\lge_xml_util.cpp">
+      <Filter>basecode</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\lge_engine.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\lge_font.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\lge_render_gles2.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\lge_sprite.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\lge_texture.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\lge_render_system.cpp">
+      <Filter>engine</Filter>
     </ClCompile>
     <ClCompile Include="lge.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>application</Filter>
     </ClCompile>
-    <ClCompile Include="lge_engine.cpp">
-      <Filter>lge</Filter>
-    </ClCompile>
-    <ClCompile Include="lge_render_gles2.cpp">
-      <Filter>lge</Filter>
-    </ClCompile>
-    <ClCompile Include="lge_util.cpp">
-      <Filter>lge</Filter>
-    </ClCompile>
-    <ClCompile Include="lge_render.cpp">
-      <Filter>lge</Filter>
-    </ClCompile>
-    <ClCompile Include="lge_texture.cpp">
-      <Filter>lge</Filter>
-    </ClCompile>
-    <ClCompile Include="lge_sprite.cpp">
-      <Filter>lge</Filter>
-    </ClCompile>
-    <ClCompile Include="lge_font.cpp">
-      <Filter>lge</Filter>
-    </ClCompile>
-    <ClCompile Include="lge_platform.cpp">
-      <Filter>lge</Filter>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>application</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="lge.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
+    <ClInclude Include="basecode\lge_logger.h">
+      <Filter>basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="basecode\lge_md5.h">
+      <Filter>basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="basecode\lge_platform.h">
+      <Filter>basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="basecode\lge_profile.h">
+      <Filter>basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="basecode\lge_singleton.h">
+      <Filter>basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="basecode\lge_string_format.h">
+      <Filter>basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="basecode\lge_sys_info.h">
+      <Filter>basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="basecode\lge_util.h">
+      <Filter>basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="basecode\lge_xml_util.h">
+      <Filter>basecode</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\lge_engine.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\lge_font.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\lge_render_gles2.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\lge_sprite.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\lge_texture.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\lge_render_system.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="lge.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>application</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>application</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

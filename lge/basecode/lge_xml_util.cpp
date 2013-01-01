@@ -1,5 +1,5 @@
-﻿#include "XmlUtil.h"
-#include "PlatformDefine.h"
+﻿#include "lge_platform.h"
+#include "lge_xml_util.h"
 
 rapidxml::xml_node<>* XmlUtil::getXmlNode(rapidxml::xml_node<>* root, const char* key)
 {

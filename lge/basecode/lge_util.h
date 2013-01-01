@@ -13,6 +13,4 @@ const char* GetDocumentPath();
 const char* GetApplicationPath();
 unsigned int TimeGet(void);
 int IsFileExist(const char* lpcszPathFilename);
-
-
 void SendEventToAdx(const char* event, const char* data);

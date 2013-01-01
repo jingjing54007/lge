@@ -8,10 +8,12 @@
 #endif
 #include <assert.h>
 
-#include "GlobalFunction.h"
-#include "PlatformDefine.h"
-#include "LogManager.h"
-#include "SimpleProfile.h"
+#include "lge_platform.h"
+#include "lge_util.h"
+#include "lge_logger.h"
+#include "lge_string_format.h"
+#include "lge_profile.h"
+#include "lge_sys_info.h"
 
 #ifdef ENABLE_PROFILE
 

@@ -107,7 +107,7 @@ private:
 	char m_data[256];
 };
 
-#include "SysInfo.h"
+#include "lge_sys_info.h"
 class MemoryLogger
 {
 public:

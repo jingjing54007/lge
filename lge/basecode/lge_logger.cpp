@@ -1,6 +1,6 @@
-﻿#include "GlobalFunction.h"
-#include "LogManager.h"
-#include "PlatformDefine.h"
+﻿#include "lge_platform.h"
+#include "lge_logger.h"
+#include "lge_util.h"
 
 #include <math.h>
 #include <stdio.h>

@@ -1,5 +1,16 @@
 #include "lge_platform.h"
 #include "lge_util.h"
+#include "lge_logger.h"
+#include "lge_string_format.h"
+
+#ifdef WIN32
+#include <direct.h>
+#include <windows.h>
+#else
+#include <unistd.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#endif
 
 void lge_debug_log(const char * pszFormat, ...)
 {
@@ -20,22 +31,6 @@ void lge_debug_log(const char * pszFormat, ...)
 }
 
 
-
-
-#include "GlobalFunction.h"
-
-#ifdef WIN32
-#include <direct.h>
-#include <windows.h>
-#else
-#include <unistd.h>
-#include <sys/stat.h>
-#include <sys/time.h>
-#endif
-
-#include "PlatformDefine.h"
-#include "LogManager.h"
-#include "StringFormat.h"
 
 char g_document_path[1024] = {0};
 

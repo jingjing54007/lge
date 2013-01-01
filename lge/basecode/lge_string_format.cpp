@@ -4,8 +4,8 @@
 #include <cassert>
 #include <algorithm>
 
-#include "PlatformDefine.h"
-#include "StringFormat.h"
+#include "lge_platform.h"
+#include "lge_string_format.h"
 
 namespace string_format
 {

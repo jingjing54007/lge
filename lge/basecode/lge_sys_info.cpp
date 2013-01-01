@@ -1,4 +1,5 @@
-#include "SysInfo.h"
+#include "lge_sys_info.h"
+
 #ifndef ENABLE_PROFILE_SYSINFO
 unsigned int GetTotalMemory()
 {
@@ -45,7 +46,7 @@ unsigned int GetProcessMemory()
 #include <typeinfo>
 #include <stdexcept>
 
-#include "LogManager.h"
+#include "lge_logger.h"
 
 
 #ifdef WIN32

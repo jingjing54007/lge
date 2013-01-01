@@ -1,4 +1,5 @@
-#include "MD5.h"
+#include "lge_platform.h"
+#include "lge_md5.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
@@ -9,7 +10,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "PlatformDefine.h"
 
 #if !defined(_TRUNCATE)
 #define _TRUNCATE ((size_t)-1)
