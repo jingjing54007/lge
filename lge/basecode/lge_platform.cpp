@@ -1,0 +1,1 @@
+#include "lge_platform.h"

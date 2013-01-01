@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MapEdit - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MapEdit.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\areas.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\Bmp.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\ConditionDlg.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\EditConditionDlg.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\EditDlg.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\EditEventDlg.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\MainFrm.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\MapEdit.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\MapEditDoc.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\MapEditView.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\MyArray.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\NpcStateDlg.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\QieHuanCode.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\SampleView.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\scene.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\SYSDLG.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\Thing.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\ToolsBar.cpp"
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\ZoomDlg.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP9.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MapEdit.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Game98\RPGTool\µØÍ¼±à¼­Æ÷\MapEdit\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MapEdit.pdb" /debug /machine:I386 /out:"Debug/MapEdit.exe" /pdbtype:sept 
+".\Debug\areas.obj"
+".\Debug\Bmp.obj"
+".\Debug\ConditionDlg.obj"
+".\Debug\EditConditionDlg.obj"
+".\Debug\EditDlg.obj"
+".\Debug\EditEventDlg.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MapEdit.obj"
+".\Debug\MapEditDoc.obj"
+".\Debug\MapEditView.obj"
+".\Debug\MyArray.obj"
+".\Debug\NpcStateDlg.obj"
+".\Debug\QieHuanCode.obj"
+".\Debug\SampleView.obj"
+".\Debug\scene.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SYSDLG.obj"
+".\Debug\Thing.obj"
+".\Debug\ToolsBar.obj"
+".\Debug\ZoomDlg.obj"
+".\Debug\MapEdit.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+areas.cpp
+Bmp.cpp
+ConditionDlg.cpp
+EditConditionDlg.cpp
+EditDlg.cpp
+EditEventDlg.cpp
+MainFrm.cpp
+MapEdit.cpp
+MapEditDoc.cpp
+MapEditView.cpp
+MyArray.cpp
+NpcStateDlg.cpp
+QieHuanCode.cpp
+SampleView.cpp
+scene.cpp
+SYSDLG.cpp
+Thing.cpp
+ToolsBar.cpp
+ZoomDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MapEdit.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

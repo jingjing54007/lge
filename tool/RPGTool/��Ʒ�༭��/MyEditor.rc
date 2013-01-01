@@ -1,0 +1,243 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文（中华人民共和国） resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MyEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MyEditor.ico"
+IDI_MyEditor            ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 329, 197
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MyEditor"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         132,IDC_STATIC,"Static",SS_BITMAP,0,0,328,197,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+END
+
+IDD_MYEDITOR_DIALOG DIALOGEX 0, 0, 487, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_APPWINDOW
+CAPTION "ItemEditor"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "NAME:",IDC_STATIC,375,5,35,8
+    EDITTEXT        IDC_NAME,420,5,55,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    LTEXT           "物品ID:",IDC_STATIC,375,38,35,8
+    EDITTEXT        IDC_STH_ID,420,38,55,12,ES_AUTOHSCROLL | WS_DISABLED,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "图片ID:",IDC_STATIC,375,71,35,8
+    EDITTEXT        IDC_PIC_ID,420,71,55,12,ES_AUTOHSCROLL | WS_DISABLED,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "触发功能:",IDC_STATIC,375,104,35,8
+    EDITTEXT        IDC_FUNCTION,420,104,55,12,ES_AUTOHSCROLL | WS_GROUP,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Spin2",IDC_FUNCTION_SPIN,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,475,103,10,15,WS_EX_CLIENTEDGE
+    CONTROL         "允许触发",IDC_ACTIVE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,375,137,46,10
+    CONTROL         "允许显示",IDC_VISIBLE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,375,172,46,10
+    CTEXT           "基于物品库\n的操作",IDC_STATIC,249,5,41,19
+    PUSHBUTTON      "添加物品 ",IDC_ADD_BUTTON,250,30,40,15,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "删除物品",IDC_DEL_BUTTON,250,58,40,15,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "修改物品",IDC_MODIFY_BUTTON,250,86,40,15,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "保存退出",IDC_SAVE,250,114,40,15,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "放弃退出",IDCANCEL,250,142,40,15,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "帮助",IDC_HELP_BUTTON,250,170,40,15,0,WS_EX_CLIENTEDGE
+    LTEXT           "物品库",IDC_STATIC,322,5,35,8
+    LISTBOX         IDC_STH_LIST,300,21,65,165,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "图片库",IDC_STATIC,200,5,35,8,0,WS_EX_TRANSPARENT
+    LISTBOX         IDC_PIC_LIST,175,20,65,165,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    CONTROL         131,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE,5,5,150,190
+    GROUPBOX        "",IDC_STATIC,170,15,75,175,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "",IDC_STATIC,295,15,75,175,0,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "MyEditor Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "MyEditor"
+            VALUE "LegalCopyright", "版权所有 (C) 2003"
+            VALUE "OriginalFilename", "MyEditor.EXE"
+            VALUE "ProductName", "MyEditor 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_MYEDITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 480
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "face.bmp"
+IDB_BITMAP2             BITMAP                  "help.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MyEditor(&A)..."
+END
+
+#endif    // 中文（中华人民共和国） resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MyEditor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

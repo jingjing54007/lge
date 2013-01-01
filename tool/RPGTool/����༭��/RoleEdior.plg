@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RoleEdior - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/RoleEdior.res" /d "_DEBUG" /d "_AFXDLL" "E:\本试验室游戏开发项目\Game Dev\RPGTool\人物编辑器\RoleEdior.rc"" 
+Creating temporary file "C:\DOCUME~1\aime\LOCALS~1\Temp\RSP12.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/RoleEdior.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\本试验室游戏开发项目\Game Dev\RPGTool\人物编辑器\AnimatorDlg.cpp"
+"E:\本试验室游戏开发项目\Game Dev\RPGTool\人物编辑器\DIB.CPP"
+"E:\本试验室游戏开发项目\Game Dev\RPGTool\人物编辑器\RoleEdior.cpp"
+"E:\本试验室游戏开发项目\Game Dev\RPGTool\人物编辑器\RoleEdiorDlg.cpp"
+"E:\本试验室游戏开发项目\Game Dev\RPGTool\人物编辑器\Thing.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\aime\LOCALS~1\Temp\RSP12.tmp" 
+Creating temporary file "C:\DOCUME~1\aime\LOCALS~1\Temp\RSP13.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/RoleEdior.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\本试验室游戏开发项目\Game Dev\RPGTool\人物编辑器\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\aime\LOCALS~1\Temp\RSP13.tmp" 
+Creating temporary file "C:\DOCUME~1\aime\LOCALS~1\Temp\RSP14.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/RoleEdior.pdb" /debug /machine:I386 /out:"RoleEdior.exe" /pdbtype:sept 
+".\Debug\AnimatorDlg.obj"
+".\Debug\DIB.OBJ"
+".\Debug\RoleEdior.obj"
+".\Debug\RoleEdiorDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Thing.obj"
+".\Debug\RoleEdior.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\aime\LOCALS~1\Temp\RSP14.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AnimatorDlg.cpp
+DIB.CPP
+RoleEdior.cpp
+RoleEdiorDlg.cpp
+Thing.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+RoleEdior.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

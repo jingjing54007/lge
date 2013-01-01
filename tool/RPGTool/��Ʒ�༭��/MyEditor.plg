@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MyEditor - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/MyEditor.res" /d "_DEBUG" /d "_AFXDLL" "E:\NT\Microsoft Visual Studio\MyProjects\MyEditor\MyEditor.rc"" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/MyEditor.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\NT\Microsoft Visual Studio\MyProjects\MyEditor\DIB.cpp"
+"E:\NT\Microsoft Visual Studio\MyProjects\MyEditor\MyEditor.cpp"
+"E:\NT\Microsoft Visual Studio\MyProjects\MyEditor\MyEditorDlg.cpp"
+"E:\NT\Microsoft Visual Studio\MyProjects\MyEditor\Thing.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2F.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP30.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/MyEditor.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\NT\Microsoft Visual Studio\MyProjects\MyEditor\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP30.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP31.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MyEditor.pdb" /debug /machine:I386 /out:"Debug/MyEditor.exe" /pdbtype:sept 
+".\Debug\DIB.obj"
+".\Debug\MyEditor.obj"
+".\Debug\MyEditorDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Thing.obj"
+".\Debug\MyEditor.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP31.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DIB.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+MyEditor.cpp
+MyEditorDlg.cpp
+Thing.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+MyEditor.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
