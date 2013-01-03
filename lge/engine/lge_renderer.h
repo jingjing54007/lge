@@ -1,14 +1,14 @@
-//
-//  lge_renderer.h
-//  lge_helloworld
-//
-//  Created by 佳 王 on 13-1-3.
-//  Copyright (c) 2013年 佳 王. All rights reserved.
-//
+#pragma once
 
-#ifndef __lge_helloworld__lge_renderer__
-#define __lge_helloworld__lge_renderer__
+NAMESPACE_BEGIN
 
-#include <iostream>
+class Renderer
+{
+public:
+    virtual void beginScene() = 0;
+    virtual void endScene() = 0;
+	virtual void flip() = 0;
+    virtual void clear() = 0;
+};
 
-#endif /* defined(__lge_helloworld__lge_renderer__) */
+NAMESPACE_END

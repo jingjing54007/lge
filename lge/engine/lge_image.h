@@ -1,14 +1,20 @@
-//
-//  lge_image.h
-//  lge_helloworld
-//
-//  Created by 佳 王 on 13-1-3.
-//  Copyright (c) 2013年 佳 王. All rights reserved.
-//
+#pragma once
 
-#ifndef __lge_helloworld__lge_image__
-#define __lge_helloworld__lge_image__
+NAMESPACE_BEGIN
 
-#include <iostream>
+class Image
+{
+public:
+    Image(const char* fileName);
+    Image(unsigned char* data, int length);
+private:
+    int m_width;
+    int m_height;
+    int m_bpp;
+    bool m_hasAlpha;
+    bool m_isPremultipliedAlpha;
+    std::string m_fileName;
+    unsigned char* m_data;
+};
 
-#endif /* defined(__lge_helloworld__lge_image__) */
+NAMESPACE_END
