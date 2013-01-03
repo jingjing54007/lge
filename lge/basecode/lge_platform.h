@@ -61,6 +61,8 @@ typedef __int64 int64;
 #else
 typedef unsigned long long uint64;
 typedef long long int64;
+
+typedef void* HWND;
 #endif
 
 
@@ -93,3 +95,11 @@ inline void log_msg(const char *type,
 
 
 #define SWAP16(x) static_cast(uint16, ((x << 8) | (x >> 8)));
+
+#define NAMESPACE_BEGIN namespace LGE {
+#define NAMESPACE_END }
+
+
+
+
+

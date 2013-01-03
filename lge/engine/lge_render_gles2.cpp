@@ -1,1 +1,0 @@
-#include "lge_render_gles2.h"

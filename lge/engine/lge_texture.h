@@ -1,1 +1,7 @@
 #pragma once
+
+NAMESPACE_BEGIN
+
+
+
+NAMESPACE_END

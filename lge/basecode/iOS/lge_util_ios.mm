@@ -8,20 +8,20 @@
 
 #include <string>
 
-#include "PlatformDefine.h"
-#include "StringFormat.h"
-#include "GlobalFunction.h"
+#include "lge_platform.h"
+#include "lge_string_format.h"
+#include "lge_util.h"
 
 extern char g_document_path[1024];
 
 // =====================================================================================================================
 // =======================================================================================================================
-CC_EXTERN const char* GetApplicationPath()
+const char* GetApplicationPath()
 {
 	return [[[NSBundle mainBundle] bundlePath] UTF8String];
 }
 
-CC_EXTERN const char* GetDocumentPath()
+const char* GetDocumentPath()
 {
 	if (g_document_path[0] == 0)
 	{
@@ -35,7 +35,7 @@ CC_EXTERN const char* GetDocumentPath()
 
 // =====================================================================================================================
 // =======================================================================================================================
-CC_EXTERN FILE* MyFileOpen(const char *pszFile, const char *pszMode)
+FILE* MyFileOpen(const char *pszFile, const char *pszMode)
 {
 	if (!pszFile || !pszMode || pszFile[0] == 0 || pszMode[0] == 0) {
 		return NULL;
@@ -83,7 +83,7 @@ CC_EXTERN FILE* MyFileOpen(const char *pszFile, const char *pszMode)
 
 // =====================================================================================================================
 // =======================================================================================================================
-CC_EXTERN void MyCopyFile(const char* src, const char* dest)
+void MyCopyFile(const char* src, const char* dest)
 {
     if (!src || !dest || src[0] == 0 || dest[0] == 0) {
         return;

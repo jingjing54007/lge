@@ -1,19 +1,43 @@
 
 #include "lge_platform.h"
 
-#ifdef WIN32
-#pragma comment(lib, "libEGL.lib")
-#pragma comment(lib, "libGLESv2.lib")
-#endif
-
 #include "lge_engine.h"
+#include "lge_renderer_gles2.h"
 
-bool lge_init_graphic(HWND hWnd, int width, int height)
+NAMESPACE_BEGIN
+
+Engine::Engine()
 {
-	return true;
 }
 
-bool lge_init_sound()
+Engine::~Engine()
 {
-	return true;
 }
+
+bool Engine::initGraphic(HWND hWnd)
+{
+    m_renderer = new RendererGLES2(hWnd);
+    return true;
+}
+
+
+void Engine::beginScene()
+{
+    m_renderer->beginScene();
+}
+
+void Engine::endScene()
+{
+    m_renderer->endScene();
+}
+
+void Engine::flip()
+{
+    m_renderer->flip();
+}
+
+void Engine::clear()
+{
+    m_renderer->clear();
+}
+NAMESPACE_END

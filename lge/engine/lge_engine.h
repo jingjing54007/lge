@@ -1,9 +1,24 @@
 #pragma once
 #include "lge_singleton.h"
 
-extern bool lge_init_graphic(HWND hWnd, int width, int height);
-extern bool lge_init_sound();
+NAMESPACE_BEGIN
+class Renderer;
 
-class LEngine : public MySingleton<LEngine>
+class Engine : public MySingleton<Engine>
 {
+public:
+    Engine();
+    ~Engine();
+    
+    bool initGraphic(HWND hWnd);
+    bool initSound();
+    
+    void beginScene();
+    void endScene();
+    void flip();
+    void clear();
+private:
+    Renderer* m_renderer;
 };
+
+NAMESPACE_END

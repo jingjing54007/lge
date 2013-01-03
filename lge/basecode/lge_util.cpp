@@ -18,16 +18,19 @@ void lge_debug_log(const char * pszFormat, ...)
 
     va_list ap;
     va_start(ap, pszFormat);
-    vsnprintf_s(szBuf, 1024, 1024, pszFormat, ap);
+    vsnprintf(szBuf, 1024, pszFormat, ap);
     va_end(ap);
 
+#ifdef __WIN32__
     WCHAR wszBuf[1024] = {0};
     MultiByteToWideChar(CP_UTF8, 0, szBuf, -1, wszBuf, sizeof(wszBuf));
     OutputDebugStringW(wszBuf);
     OutputDebugStringA("\n");
 
     WideCharToMultiByte(CP_ACP, 0, wszBuf, sizeof(wszBuf), szBuf, sizeof(szBuf), NULL, FALSE);
+#else
     printf("%s\n", szBuf);
+#endif
 }
 
 

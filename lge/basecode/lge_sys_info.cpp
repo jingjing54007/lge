@@ -81,7 +81,7 @@ unsigned int GetProcessMemory()
 #include <sys/socket.h>
 #include <mach/task.h>
 #include <vector>
-#include "MySingleton.h"
+#include "lge_singleton.h"
 
 class SysInfo : public MySingleton<SysInfo>
 {
@@ -421,13 +421,13 @@ unsigned int GetAvailableMemory()
 {
 	// wired是系统内存，active是当前占用的内存，inactive是非活跃进程内存，可以被使用，free是完全没有被使用的内存
 	int wired, active, inactive, free;
-	SysInfo::GetSingleton().GetMemoryInfo(&wired, &active, &inactive, &free);
+	SysInfo::getSingleton().GetMemoryInfo(&wired, &active, &inactive, &free);
 	return (free + inactive) / 1024;
 }
 
 unsigned int GetProcessMemory()
 {
-	return SysInfo::GetSingleton().GetCurrentProcessMemoryInfo() / 1024;
+	return SysInfo::getSingleton().GetCurrentProcessMemoryInfo() / 1024;
 }
 #else
 unsigned int GetTotalMemory()
